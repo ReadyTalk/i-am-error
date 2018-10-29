@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017
+  },
+  "plugins": [
+    "chai-friendly",
+    "mocha"
+  ],
+  "rules": {
+    "chai-friendly/no-unused-expressions": "error",
+    "indent": ["error", 2],
+    "linebreak-style": ["warn", "unix"],
+    "mocha/no-mocha-arrows": "error",
+    "no-console": "warn",
+    "no-tabs": "error",
+    "no-trailing-spaces": "error",
+    "no-unused-expressions": "off",
+    "no-var": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "warn",
+    "quotes": ["error", "single"]
+  },
+  "overrides": [
+    {
+      "files": ["test/test.js"],
+      "rules": {
+        "prefer-arrow-callback": "off"
+      }
+    }
+  ]
+}

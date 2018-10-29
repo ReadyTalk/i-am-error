@@ -1,0 +1,24 @@
+{
+  "name": "i-am-error",
+  "version": "1.0.0",
+  "description": "Lets you create custom Error objects",
+  "author": "John Langewisch",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahndis/i-am-error.git"
+  },
+  "main": "i-am-error.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-mocha": "^5.2.0",
+    "mocha": "^5.2.0"
+  }
+}
