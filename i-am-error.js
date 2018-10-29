@@ -1,18 +1,16 @@
 'use strict';
 
-const iamerror = {};
-
 /**
  * Creates a dynamically named constructor for an error that inherits from Error.
  *
  * @param {string} name - Name for the new error's constructor (e.g. 'InvalidInputError')
- * @param {object} attrs - Attributes assigned to the new error when createError is called. Must be string, number or boolean.
+ * @param {object} attrs - Attributes assigned to the new error when IAmError is called. Must be string, number or boolean.
  * @param {array} args - Attributes assigned to the new error when the new error is constructed. Names must be strings, args passed in can be anything.
  *
  * Example:
  * The following creates an AuthenticationError object with a status attribute set to 403
  *
- * createError('AuthenticationError', { status: 403 }, [ 'timestamp' ])
+ * const AuthenticationError = IAmError('AuthenticationError', { status: 403 }, [ 'timestamp' ])
  *
  * and can be used like:
  *
@@ -20,7 +18,7 @@ const iamerror = {};
  *
  * Each error is automatically configured with a message attribute and a data attribute.
  */
-iamerror.createError = (name, attrs={}, args=[]) => {
+const IAmError = (name, attrs={}, args=[]) => {
   // Sanitize name
   if (!isValidIdentifier(name)) {
     throw new Error('Invalid error name \'' + name + '\'');
@@ -124,4 +122,4 @@ function isValidAttributeValue(attr) {
   return true;
 }
 
-module.exports = iamerror;
+module.exports = IAmError;
