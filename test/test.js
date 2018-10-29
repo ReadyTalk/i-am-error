@@ -19,9 +19,15 @@ describe('IAmError', function () {
     });
 
     it('should not allow invalid identifiers as a name', function () {
-      expect(() => { IAmError('123'); }).to.throw('Invalid error name');
-      expect(() => { IAmError('Test-Error'); }).to.throw('Invalid error name');
-      expect(() => { IAmError('1TestError'); }).to.throw('Invalid error name');
+      expect(() => {
+        IAmError('123');
+      }).to.throw('Invalid error name');
+      expect(() => {
+        IAmError('Test-Error');
+      }).to.throw('Invalid error name');
+      expect(() => {
+        IAmError('1TestError');
+      }).to.throw('Invalid error name');
       expect(() => {
         IAmError('TestError () { console.log("bad things"); } function ');
       }).to.throw('Invalid error name');
