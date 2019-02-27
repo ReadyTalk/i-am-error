@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jahndis/i-am-error.git"
+    "url": "https://github.com/ReadyTalk/i-am-error.git"
   },
   "main": "i-am-error.js",
   "scripts": {
