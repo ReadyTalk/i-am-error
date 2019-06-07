@@ -1,6 +1,6 @@
 {
   "name": "i-am-error",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lets you create custom Error objects",
   "author": "John Langewisch",
   "license": "MIT",
